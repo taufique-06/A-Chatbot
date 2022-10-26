@@ -1,11 +1,18 @@
-import Register from "./components/Register";
-import Login from "./components/Login";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 import "./style.scss";
+import Sidebar from "./components/Sidebar";
+import Chat from "./components/Chat";
+
 function App() {
   return (
-
-    <Login />
-  );
+  <div className="home">
+    <div className="container">
+      <Sidebar/>
+      <Chat/>
+    </div>
+  </div>
+  )
 }
 
 export default App;
